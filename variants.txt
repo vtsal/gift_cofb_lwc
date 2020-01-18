@@ -1,0 +1,15 @@
+v1
+
+    Reference software:    
+        giftcofb128v1
+        
+    Architecture description:
+        Implementation of GIFT-COFB, with b=128, n=128, and t=128. Basic iterative architecture where 1 round of the GIFT round function is executed in 1 clock cycle.
+
+    Key setup time:
+        0
+        
+    Execution time of authenticated encryption:
+        102 + (Na*50) + (Nm*53)
+    Execution time of authenticated decryption:
+        98  + (Na*50) + (Nc*53)
